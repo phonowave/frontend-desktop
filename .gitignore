@@ -1,0 +1,11 @@
+# Build files
+build/
+
+# Gradle files
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+
+# Mac OS files
+.DS_Store
