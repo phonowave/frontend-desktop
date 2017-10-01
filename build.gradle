@@ -1,4 +1,15 @@
+buildscript {
+    dependencies {
+        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+    }
+    repositories {
+        jcenter()
+    }
+}
+
 apply plugin: 'java-library'
+apply plugin: 'eclipse'
+apply plugin: 'javafx-gradle-plugin'
 
 repositories {
     jcenter()
@@ -6,6 +17,11 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:4.12'
+}
+
+jfx {
+    mainClass = 'nl.nicolassoftware.phonowave.frontend.desktop.Main'
+    vendor = 'Nick Gubbels'
 }
 
 task wrapper (type: Wrapper) {

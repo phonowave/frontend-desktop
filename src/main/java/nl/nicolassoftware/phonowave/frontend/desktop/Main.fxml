@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.media.MediaView?>
+
+<VBox
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="nl.nicolassoftware.phonowave.frontend.desktop.MainController"
+>
+    <MediaView fx:id="mediaView" />
+    <Button
+        fx:id="selectFileButton"
+        text="Select File"
+        onAction="#selectFile" />
+    <Button
+        fx:id="playButton"
+        text="Play"
+        onAction="#play" />
+</VBox>
